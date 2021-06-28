@@ -1,0 +1,32 @@
+.opportunities
+	padding: 79px 0px 81px 0px
+	&__title
+		font-size: 48.1px
+		font-weight: 700
+		color: #393939
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 37px
+	&__arrows
+		display: flex
+		justify-content: center
+		margin: 50px 0px 33px 0px
+	&__item
+		position: relative
+		padding: 0px 57px 36px 57px
+		text-align: center
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		overflow: hidden
+	&__without, &__with
+		display: grid 
+		grid-template: 255px / repeat(3, 1fr)
+		gap-columns: 30px
+		img
+			object-fit: cover
+			position: absolute
+			z-index: -1
+			right: 50%
+			transform: translateX(50%)
+			top: 0
