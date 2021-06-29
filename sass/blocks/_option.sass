@@ -1,0 +1,39 @@
+.option
+	min-height: 580px
+	display: flex
+	position: relative
+	&__square
+		width: 167px
+		height: 167px
+		background-color: rgba(#00c2f0, 0.3)
+		z-index: -1
+		position: absolute
+		bottom: 181px
+	&__head
+		font-size: 30px
+		font-weight: 900
+		text-transform: uppercase
+		color: #ffffff
+		margin-bottom: 20px
+	&__title
+		position: absolute
+		z-index: 2
+		top: 79px
+		left: 50%
+		transform: translateX(-50%)
+	&__cloud, &__server
+		position: relative
+		width: 50%
+		padding-top: 270px
+		z-index: -2
+	&__cloud
+		background: url('../img/option1.jpg') 50%/cover no-repeat
+		padding-right: 82px
+		text-align: right
+		.option__square
+			right: 45px
+	&__server
+		background: url('../img/option2.jpg') 50%/cover no-repeat
+		padding-left: 82px
+		.option__square
+			left: 45px

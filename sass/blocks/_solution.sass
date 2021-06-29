@@ -1,0 +1,52 @@
+.solution
+	min-height: 889px
+	background: url('../img/woman.jpg') 50%/cover no-repeat
+	padding: 79px 0px 61px 0px
+	&__navbar
+		width: 843px
+		height: 64px
+		border: 1px solid #ffffff
+		margin: 25px auto 36px auto
+		padding: 0px 30px
+		display: flex
+		align-items: center
+		li 
+			height: 49px
+			display: flex
+			align-items: center
+		li:not(:last-child)
+			border-right: 1px solid rgba(255, 255, 255, 0.4)
+			padding-right: 25px
+		ul 
+			width: 100%
+			list-style-type: none
+			display: flex
+			justify-content: space-between
+		a 
+			display: block
+			font-size: 14px
+			line-height: 25px
+			font-weight: 400
+			color: #ffffff
+			text-decoration: none
+			&:hover
+				font-weight: 700
+				color: #00c2f0
+	&__slider
+		margin: 0 auto
+		width: 947px
+		height: 560px
+		position: relative
+		.slick-prev, .slick-next
+			border: none
+			background: unset
+			cursor: pointer
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+		.slick-prev
+			left: -30px
+		.slick-next
+			right: -30px
+		img 
+			object-fit: cover
