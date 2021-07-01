@@ -1,0 +1,61 @@
+.address, .navigation
+	position: fixed
+	left: -100%
+	top: 10px
+	width: 43%
+	height: 50%
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	padding: 0px 0px 15px 15px
+	background-color: #ffffff
+	z-index: 10
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
+	transition: 0.5s all
+	&.active
+		left: 10px
+	&__close
+		position: absolute
+		top: 20px
+		right: 40px
+		cursor: pointer
+		span
+			position: absolute
+			display: block
+			width: 25px
+			height: 3px
+			background-color: #000000
+			&:nth-child(1)
+				transform: rotate(45deg)
+			&:nth-child(2)
+				transform: rotate(-45deg)
+	.country
+		&__img
+			margin-right: 8px
+		&__item
+			margin-bottom: 10px
+		&__title
+			font-size: 13px
+		&__undertitle
+			font-size: 12px
+.navigation
+	height: 35%
+	background-color: $main-color
+	padding-right: 15px
+	&__close
+		span 
+			background-color: #ffffff
+	a 
+		font-weight: 700
+		font-size: 18px
+		color: #ffffff
+		line-height: 23px
+		text-decoration: none 
+		text-transform: uppercase
+		display: block
+	ul 
+		list-style-type: none 
+	li 
+		margin-top: 10px
+		border-bottom: 1px solid #000
+		height: 27px

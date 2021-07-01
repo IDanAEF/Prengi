@@ -6,3 +6,19 @@ $(document).ready(function(){
     arrows: true
   });
 });
+
+$('.header__addresses').on('click', function() {
+  $('.address').addClass('active');
+});
+
+$('.address__close').on('click', function() {
+  $('.address').removeClass('active');
+});
+
+$('.hamburger').on('click', function() {
+  $('.navigation').addClass('active');
+});
+
+$('.navigation__close').on('click', function() {
+  $('.navigation').removeClass('active');
+});
