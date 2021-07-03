@@ -22,3 +22,19 @@ $('.hamburger').on('click', function() {
 $('.navigation__close').on('click', function() {
   $('.navigation').removeClass('active');
 });
+
+$('.footer__title-i').each(function(i) {
+  $(this).on('click', function() {
+    $('.inf_links').eq(i).addClass('active');
+    $('.inf_links').eq(i-1).removeClass('active');
+    $('.inf_links').eq(i-2).removeClass('active');
+  });
+});
+
+$('.inf_links a').on('click', function() {
+  $('.inf_links').removeClass('active');
+});
+
+$('.inf_links__close').on('click', function() {
+  $('.inf_links').removeClass('active');
+});

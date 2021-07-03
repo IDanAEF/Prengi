@@ -59,3 +59,36 @@
 		margin-top: 10px
 		border-bottom: 1px solid #000
 		height: 27px
+.inf_links
+	position: fixed
+	bottom: -100%
+	right: 20%
+	background-color: #0083a1
+	z-index: 10
+	padding: 30px 20px
+	overflow: hidden
+	transition: 0.5s all
+	ul 
+		li 
+			a 
+				font-size: 12px
+				line-height: 13px
+	&__close
+		position: absolute
+		top: 15px
+		right: 30px
+		cursor: pointer
+		span
+			position: absolute
+			display: block
+			width: 20px
+			height: 3px
+			background-color: #ffffff
+			&:nth-child(1)
+				transform: rotate(45deg)
+			&:nth-child(2)
+				transform: rotate(-45deg)
+	&.active
+		bottom: 100px
+	&-about
+		right: 0

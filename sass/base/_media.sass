@@ -49,6 +49,7 @@
 			padding: 0px 34px 35px 34px
 		&__with, &__without
 			grid-template: 222px / repeat(3, 306px)
+			grid-auto: 222px / 306px
 		&__arrows
 			margin: 29px 0px 16px 0px
 			img 
@@ -82,6 +83,7 @@
 		&__grid
 			margin-top: 30px
 			grid-template: repeat(3, 290px) / repeat(2, 480px)
+			grid-auto: 290px / 480px
 		&__item
 			overflow: hidden
 			&-title
@@ -185,6 +187,7 @@
 			padding: 0px 22px 22px 22px
 		&__with, &__without
 			grid-template: 164px / repeat(3, 230px)
+			grid-auto: 164px / 230px
 	.solution
 		padding: $p_768 0px 20px 0px
 		min-height: 625px
@@ -213,6 +216,7 @@
 		&__grid
 			margin-top: 20px
 			grid-template: repeat(3, 222px) / repeat(2, 360px)
+			grid-auto: 222px / 360px
 		&__item
 			&-title
 				font-size: 17px
@@ -281,12 +285,36 @@
 	.title
 		font-size: 20px
 		line-height: 21px
+	.button 
+		width: 152px
+		height: 39px
+		font-size: 11px
 	.country
 		display: none
 	.header 
-		&__nav 
+		margin-bottom: 58px
+		&__addresses
+			display: block
+		&__nav
+			display: flex
+			justify-content: space-between
+			align-items: center
+			width: 270px
 			ul 
 				display: none
+		.hamburger
+			display: flex
+	.promo 
+		&__title
+			font-size: 25px
+			line-height: 26px
+		&__undertitle
+			font-size: 16px
+			line-height: 17px
+			margin: 6px 0px 34px 0px
+		.container
+			min-height: 364px
+			padding: 10px 0px 35px 0px
 	.opportunities
 		padding: $p_576 0px
 		&__title
@@ -294,6 +322,7 @@
 			margin-bottom: 10px
 		&__with, &__without
 			grid-template: 128px / repeat(3, 172px)
+			grid-auto: 128px / 172px
 		&__item
 			padding: 0px 10px 17px 10px
 	.solution
@@ -323,8 +352,208 @@
 		&__grid
 			margin-top: 15px
 			grid-template: repeat(3, 168px) / repeat(2, 270px)
+			grid-auto: 168px / 270px
 		&__item
 			&-title
 				font-size: 13px
 				height: 85px
 				padding: 0px 25px
+	.option 
+		min-height: 322px
+		&__title
+			top: $p_576
+		&__cloud, &__server
+			padding-top: 130px
+			.undertitle
+				font-size: 11px
+		&__cloud
+			padding-right: 40px
+			.option__square
+				right: 20px
+		&__server
+			padding-left: 40px
+			.option__square
+				left: 20px
+		&__square
+			bottom: 95px
+			width: 120px
+			height: 120px
+		&__head
+			font-size: 16px
+			margin-bottom: 2px
+	.contact 
+		padding: $p_576 0px
+		&__img
+			width: 190px
+			height: 190px
+			padding: 20px
+		&__block
+			&:nth-child(1)
+				height: 125px
+			&:nth-child(2)
+				width: 125px
+		&__title
+			margin: 25px 0px 10px 0px
+	.footer 
+		min-height: 134px
+		padding: 15px 0px 8px 0px
+		&__head
+			align-items: center
+			justify-content: space-around
+		&__logo
+			margin-bottom: 0px
+			img 
+				width: 135px
+		&__title 
+			margin-bottom: 0px
+			font-size: 14px
+			cursor: pointer
+		&__under
+			font-size: 11px
+		&__list 
+			display: none
+		&__text
+			display: none
+		&__about
+			width: 165px
+			.footer__title
+				display: none
+@media (max-width: 575px)
+	.container
+		width: 100%
+		padding: 0px 15px
+	.title 
+		font-size: 16px
+		line-height: 17px
+	.undertitle
+		font-size: 12px
+		line-height: 15px
+	.header 
+		margin-bottom: 47px
+		&__addresses
+			font-size: 13px
+		.hamburger
+			width: 32px
+			height: 18px
+	.promo 
+		.container
+			min-height: 305px
+			padding: 10px 10px 20px 10px
+		&__title 
+			font-size: 20px
+			line-height: 21px
+		&__undertitle
+			font-size: 13px
+			line-height: 15px
+			margin: 9px 0px 34px 0px
+		&__img
+			display: none
+	.opportunities
+		padding: $p_320 0px
+		&__with, &__without
+			grid-template: repeat(3, 145px) / repeat(1, 230px)
+			justify-content: center
+			grid-row-gap: 10px
+			grid-auto-rows: 142px
+		&__item
+			padding: 0px 20px 12px 20px
+		&__arrows
+			margin: 12px 0px 8px 0px
+			img 
+				width: 28%
+		&__title 
+			font-size: 19.1px
+	.solution
+		min-height: 350px
+		&__navbar
+			width: 285px
+			height: 70px
+			ul 
+				flex-wrap: wrap
+				li:not(:last-child)
+					padding-right: 0px
+					border-right: none
+		.slick 
+			&-slider
+				width: 290px
+			&-slide
+				width: 290px
+			&-prev, &-next
+				img 
+					width: 10px
+			&-prev
+				left: 0px
+				z-index: 2
+			&-next
+				right: 0px
+	.advantages
+		padding: $p_320 0px
+		&__grid
+			margin-top: 8px
+			grid-template: repeat(6, 150px) / repeat(1, 1fr)
+			grid-auto-rows: 150px
+			grid-row-gap: 10px
+		&__item
+			&-title
+				font-size: 14px
+				height: 75px
+	.option
+		min-height: 322px
+		display: flex
+		flex-direction: column
+		&__title 
+			top: $p_320
+		&__square
+			width: 100px
+			height: 100px
+		&__cloud, &__server
+			padding-top: 0px
+			width: 100%
+			padding: 80px 40px
+			.undertitle
+				font-size: 12px
+		&__cloud
+			.option__square
+				bottom: 55px
+		&__server
+			.option__square
+				top: 65px
+		&__head
+			font-size: 16px
+	.contact
+		padding: $p_320 0px
+		&__img
+			width: 150px
+			height: 150px
+			padding: 15px
+		&__block
+			&:nth-child(1)
+				height: 100px
+			&:nth-child(2)
+				width: 100px
+		&__title 
+			margin: 15px 0px 10px 0px
+	.footer 
+		min-height: 100px
+		padding: $p_320 0px 8px 0px
+		&__about
+			width: 110px
+		&__logo 
+			img 
+				width: 100px
+		&__title 
+			font-size: 12px
+		hr 
+			margin: 13px 0px 10px 0px
+		&__under
+			font-size: 10px
+		.inf_links
+			padding-bottom: 5px
+	.address
+		width: 60%
+		height: 59%
+	.navigation
+		width: 63%
+		height: 35%
+		a 
+			font-size: 14px
