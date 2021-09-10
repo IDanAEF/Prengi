@@ -59,7 +59,7 @@
 			margin-bottom: 20px
 	.solution
 		padding: $p_992 0px 40px 0px
-		min-height: 825px
+		min-height: 740px
 		&__navbar
 			width: 773px
 			height: 55px
@@ -70,14 +70,7 @@
 			li:not(:last-child)
 				padding-right: 25px
 		&__slider
-			width: 850px
-		.slick
-			&-slider
-				width: 850px
-			&-next
-				right: -15px
-			&-prev
-				left: -15px
+			width: 800px
 	.advantages
 		padding: $p_992 0px
 		&__grid
@@ -192,7 +185,6 @@
 		padding: $p_768 0px 20px 0px
 		min-height: 625px
 		&__slider
-			height: auto
 			width: 650px
 		&__navbar
 			width: 660px
@@ -204,13 +196,9 @@
 				height: 40px
 			li:not(:last-child)
 				padding-right: 18px
-		.slick 
-			&-slider
-				width: 650px
-			&-next
-				right: -5px
-			&-prev 
-				left: -5px
+		&__prev, &__next
+			img
+				width: 13px
 	.advantages
 		padding: $p_768 0px
 		&__grid
@@ -278,7 +266,7 @@
 			margin: 20px 0px 15px 0px
 @media (max-width: 767px)
 	.inf_links
-			display: block
+		display: block
 	.container
 		width: 540px
 	.undertitle
@@ -343,12 +331,9 @@
 				padding-right: 10px
 		&__slider
 			width: 480px
-		.slick 
-			&-slider
-				width: 480px
-			&-next, &-prev 
-				img
-					width: 14px
+		&__next, &__prev
+			img 
+				width: 11px
 	.advantages
 		padding: $p_576 0px
 		&__grid
@@ -475,19 +460,11 @@
 				li:not(:last-child)
 					padding-right: 0px
 					border-right: none
-		.slick 
-			&-slider
-				width: 290px
-			&-slide
-				width: 290px
-			&-prev, &-next
-				img 
-					width: 10px
-			&-prev
-				left: 0px
-				z-index: 2
-			&-next
-				right: 0px
+		&__slider
+			width: 270px
+		&__next, &__prev
+			img 
+				width: 8px
 	.advantages
 		padding: $p_320 0px
 		&__grid

@@ -35,18 +35,18 @@
 	&__slider
 		margin: 0 auto
 		width: 947px
-		height: 560px
 		position: relative
-		.slick-prev, .slick-next
-			border: none
-			background: unset
-			cursor: pointer
-			position: absolute
-			top: 50%
-			transform: translateY(-50%)
-		.slick-prev
-			left: -30px
-		.slick-next
-			right: -30px
+		overflow: hidden
 		img 
-			object-fit: cover
+			width: 100%
+	&__prev, &__next
+		position: absolute
+		z-index: 4
+		top: 50%
+		transform: translateY(-50%)
+		cursor: pointer
+	&__next
+		right: 0
+	&__line
+		display: flex
+		transition: 0.5s all
